@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Recommend Block",
+    "description": "\"他の人はこちらも検索\"をBlockします",
+    "version": "0.1",
+    "icons": {
+        "128": "img/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches":  ["https://www.google.co.jp/*"],
+            "js": ["src/contentscript.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
